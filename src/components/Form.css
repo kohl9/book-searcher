@@ -1,0 +1,80 @@
+.form-container {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    border-radius: 30px;
+}
+
+form {
+    margin: 0 15px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 45px;
+    animation: moveRight 2400ms ease 0s infinite normal none;
+    animation-duration: 2400ms;
+}
+
+@keyframes moveRight {
+    0% {
+		transform: translate(0);
+        color: rgb(0, 255, 76);
+	}
+	20% {
+		transform: translate(-5px, 5px);
+        color: rgb(0, 255, 200);
+	}
+	40% {
+		transform: translate(-5px, -5px);
+        color: rgb(255, 0, 98);
+	}
+	60% {
+		transform: translate(5px, 5px);
+        color: rgb(0, 153, 255);
+	}
+	80% {
+		transform: translate(5px, -5px);
+        color: rgb(255, 230, 0);
+	}
+	to {
+		transform: translate(0);
+        color: rgb(0, 255, 255);
+	}
+}
+
+input {
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 0 30px 0;
+    border: none;
+    padding: 7px;
+    border-bottom: solid 2px black;
+    transition: 0.5s;
+}
+
+input:focus {
+    outline: none;
+    padding-bottom: 15px;
+    border-color: rgb(255, 85, 85);
+}
+
+button {
+    font-size: 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 7px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: rgb(255, 121, 121);
+    color: #fff;
+}
